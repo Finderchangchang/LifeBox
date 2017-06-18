@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            app:tabIconNormal="@mipmap/ic_launcher"
+            app:tabIconSelected="@mipmap/ic_launcher"
+            app:tabText="首页"
+            app:textColorNormal="@color/bottom_normal"
+            app:textColorSelected="@color/bottom_selected" />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            app:tabIconNormal="@mipmap/ic_launcher"
+            app:tabIconSelected="@mipmap/ic_launcher"
+            app:tabText="专接本"
+            app:textColorNormal="@color/bottom_normal"
+            app:textColorSelected="@color/bottom_selected" />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            app:tabIconNormal="@mipmap/ic_launcher"
+            app:tabIconSelected="@mipmap/ic_launcher"
+            app:tabText="就业创业"
+            app:textColorNormal="@color/bottom_normal"
+            app:textColorSelected="@color/bottom_selected" />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            app:tabIconNormal="@mipmap/ic_launcher"
+            app:tabIconSelected="@mipmap/ic_launcher"
+            app:tabText="我"
+            app:textColorNormal="@color/bottom_normal"
+            app:textColorSelected="@color/bottom_selected" />
+
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+</LinearLayout>
